@@ -1,6 +1,6 @@
 
 
-const MenuItem = ({item}) => {
+const   MenuItem = ({item}) => {
     const {name, price, image, recipe} = item
     return (
         <div className="flex space-x-4">
