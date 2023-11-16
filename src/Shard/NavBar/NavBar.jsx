@@ -5,7 +5,8 @@ const NavBar = () => {
     const navOptions = <>
     <ul className="text-white flex">
     <li><Link className=" font-bold " to='/'>Home</Link> </li>
-    <li><Link className=" font-bold" to='menu'>Out Menu</Link> </li>
+    <li><Link className=" font-bold" to='/menu'>Out Menu</Link> </li>
+    <li><Link className=" font-bold" to='/order'>Order Food</Link> </li>
     </ul>
     </>
     return (
