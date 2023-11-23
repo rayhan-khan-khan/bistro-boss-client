@@ -13,7 +13,7 @@ import MenuCategory from '../MenuCategory/MenuCategory';
 const Menu = () => {
     const [menu] = useMenu();
     const desserts = menu.filter(item => item.category === 'dessert');
-    const soups = menu.filter(item => item.category === 'soup');
+    const soup = menu.filter(item => item.category === 'soup');
     const salad = menu.filter(item => item.category === 'salad');
     const pizza = menu.filter(item => item.category === 'pizza');
     const offered = menu.filter(item => item.category === 'offered');
@@ -29,31 +29,16 @@ const Menu = () => {
              <MenuCategory items={offered}></MenuCategory>
              {/* dessert menu items */}
                 <MenuCategory
-                items={desserts}
-                titel="DESSERTS"
-                p="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                img={dessertImage}
+                items={desserts}  titel="desserts" img={dessertImage}
                 ></MenuCategory>
                 {/* Pizza menu items */}
-                   <MenuCategory
-                items={pizza}
-                titel="PIZZA"
-                p="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                img={pizzaImage}
+                   <MenuCategory items={pizza} titel="pizza" img={pizzaImage}
                 ></MenuCategory>
                 {/* Salad menu items */}
-                   <MenuCategory
-                items={salad}
-                titel="SALADS"
-                p="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                img={saladImage}
+                   <MenuCategory items={salad} titel="salad" img={saladImage}
                 ></MenuCategory>
                 {/* Soups menu items */}
-                   <MenuCategory
-                items={soups}
-                titel="SOUPS"
-                p="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                img={soups}
+                   <MenuCategory items={soup} titel="soup" img={soupsImage}
                 ></MenuCategory>
                 
         </div>

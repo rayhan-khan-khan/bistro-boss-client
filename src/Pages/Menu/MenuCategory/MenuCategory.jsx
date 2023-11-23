@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Cover from "../../../Shard/Cover/Cover";
 import MenuItem from "../../../Shard/MenuItem/MenuItem";
 
@@ -14,6 +15,9 @@ const MenuCategory = ({items, titel, p, img}) => {
                     ></MenuItem>)
                 }
             </div>
+            <Link to={`/order/${titel}`}>
+            <button className="btn btn-outline border-0 border-b-8 mt-4 text-orange-600">Order Now</button>
+            </Link>
         </div>
     );
 };
